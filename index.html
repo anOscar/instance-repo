@@ -44,6 +44,22 @@
 <script type="text/javascript"
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ4yvw3dFr0yTDvpWaSriVan02nRRxfKg">
 </script>
+    <style type="text/css">
+      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+    </style>
+
+<script type="text/javascript">
+  function initialize() {
+    var mapOptions = {
+      center: { lat: -34.397, lng: 150.644},
+      zoom: 8
+    };
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
 
 <!-- JQUERY -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -225,6 +241,21 @@
 </div>
 </section>  <!-- / END SEPARATOR -->
 
+
+<!-- MAP SECTION --> 
+
+<section class="works" id="works">
+	<div class="container">
+		<div class="section-header">
+			<h2 class="dark-text">Your Map</h2>
+			<h6>A map view of your local content.</h6>
+		</div>
+		<img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
+&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
+&markers=color:red%7Clabel:C%7C40.718217,-73.998284">
+	</div>
+
+</section>
 
 <!-- =========================
    WORKS SECTION      
@@ -487,7 +518,7 @@
 		<!-- COLUMN 1 - BIG MESSAGE ABOUT THE COMPANY-->
 		<div class="col-lg-4 col-md-4 column">
 			<div class="big-intro wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-				 Developing Amazing Things with Passion since 2002.
+				 Developing Amazing Things with Passion since 2015.
 			</div>
 		</div>
 		
@@ -631,7 +662,7 @@
 				<div class="member-details">
 					<h5 class="dark-text green-border-bottom">Oscar Rojas</h5>
 					<div class="position">
-						Lead Developer
+						Chief Innovation Officer
 					</div>
 				</div>
 				<div class="social-icons">
@@ -658,7 +689,7 @@
 				<div class="member-details">
 					<h5 class="dark-text blue-border-bottom">Chris Winn</h5>
 					<div class="position">
-						Software Designer/Developer
+						Chief Technology Officer
 					</div>
 				</div>
 				<div class="social-icons">
@@ -683,9 +714,9 @@
 				<img src="images/team/pic4.jpg" alt="">
 				</figure>
 				<div class="member-details">
-					<h5 class="dark-text yellow-border-bottom">Casey Cornet</h5>
+					<h5 class="dark-text yellow-border-bottom">Casey Cornnett</h5>
 					<div class="position">
-						Art Director	
+						Chief Creative Officer	
 					</div>
 				</div>
 				<div class="social-icons">
